@@ -14,3 +14,6 @@ CREATE TABLE customers
     email_address VARCHAR(255),
     number_of_complaints INT
 );
+
+DROP TABLE sales;
+DROP TABLE customers;
