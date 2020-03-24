@@ -62,3 +62,7 @@ END$$
 DELIMITER ;
 
 CALL select_average_salary();
+
+# it can drop the procedure
+
+DROP PROCEDURE select_employees;
