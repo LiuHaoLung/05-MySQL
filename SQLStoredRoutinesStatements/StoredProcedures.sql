@@ -49,3 +49,16 @@ CALL employees.select_employees();
 CALL select_employees();
 
 # third, click the tiny lightning symbol
+
+
+DELIMITER $$
+CREATE PROCEDURE select_average_salary()
+BEGIN
+SELECT 
+    AVG(salary)
+FROM
+    salaries;
+END$$
+DELIMITER ;
+
+CALL select_average_salary();
